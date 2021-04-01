@@ -1,0 +1,38 @@
+///Primary
+
+$lightRed: hsl(356, 100%, 66%);
+$veryLightRed: hsl(355, 100%, 74%);
+$veryDarkBlue: hsl(208, 49%, 24%);
+
+///Neutral
+$white: hsl(0, 0%, 100%);
+$grayishBlue: hsl(240, 2%, 79%);
+$veryDarkGrayishBlue: hsl(207, 13%, 34%);
+$veryDarkBlackBlue: hsl(240, 10%, 16%);
+
+//Graident
+
+$veryLightRedGrad: hsl(13, 100%, 72%);
+$lightRedGrad: hsl(352, 100%, 62%);
+
+$veryDarkGrayBlueGrad: hsl(237, 17%, 21%);
+$VeryDarkDesaturatedBlueGrad: hsl(237, 23%, 32%);
+
+@mixin overpass {
+  font-family: "Overpass", sans-serif;
+}
+
+@mixin ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+///font weights
+$overpassMid: 300;
+$overpassBold: 600;
+
+$ubuntuSmall: 400;
+$ubuntuMedium: 500;
+$ubuntuBold: 700;
+
+@mixin overFlowImg {
+}
