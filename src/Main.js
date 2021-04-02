@@ -12,7 +12,9 @@ function Main() {
         <h2 className={style.block__title}> Designed for the future </h2>
       </section>
 
-      <img className={style.img} src={editorMobile} alt="" />
+      <div className={style.imgContainer}>
+        <img className={style.img} src={editorMobile} alt="" />
+      </div>
 
       <section className={style.block}>
         <h2 className={style.block__title}> Introducing an extensible editor </h2>
@@ -53,7 +55,9 @@ function Main() {
         </p>
       </section>
 
-      <img className={style.img} src={laptopMobile} alt="" />
+      <div className={style.imgContainer}>
+        <img className={style.img} src={laptopMobile} alt="" />
+      </div>
 
       <section className={style.block}>
         <h2 className={style.block__title}>

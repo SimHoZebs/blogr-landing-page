@@ -18,3 +18,8 @@ h6,
 p {
   margin: 0;
 }
+
+button,
+input {
+  outline: none;
+}

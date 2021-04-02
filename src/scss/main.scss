@@ -29,15 +29,24 @@
     margin-bottom: 7.5rem;
   }
 }
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  overflow: hidden;
+}
 
 .img {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  width: calc(100vw + 2rem);
+  transform: translate(0%);
 }
 
 .infra {
-  margin-top: 14.375rem;
+  margin-top: 16.5rem;
   margin-bottom: 5rem;
-  position: relative;
+  padding-top: 0;
   z-index: 0;
 
   &__imgContainer {
@@ -52,14 +61,12 @@
     width: 100%;
     z-index: -1;
     border-radius: 0 5rem 0 5rem;
+    margin-top: 0rem;
   }
 
   &__phones {
     position: absolute;
-    max-width: 500px;
-    max-height: 525px;
-    width: 90vw;
-    height: 94.5vw;
+    width: calc(100vw - 1.8rem);
     transform: translate(-50%, -50%);
     z-index: 2;
   }
@@ -72,6 +79,7 @@
   }
 
   &__title {
+    margin-top: 0;
     padding-top: 14.375rem;
     color: white;
     z-index: 2;
