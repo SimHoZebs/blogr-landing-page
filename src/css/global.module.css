@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  color: #4b5862;
   font-family: "Overpass", sans-serif;
 }
 
@@ -22,4 +23,16 @@ p {
 button,
 input {
   outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }

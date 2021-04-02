@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  color: $veryDarkGrayishBlue;
   @include overpass;
 }
 
@@ -24,4 +25,16 @@ p {
 button,
 input {
   outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  @include ubuntu;
+  font-weight: $ubuntuBold;
 }
