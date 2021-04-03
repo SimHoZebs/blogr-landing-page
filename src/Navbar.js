@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import style from './css/navbar.module.css'
+import util from './css/util.module.css'
 import credStyle from './css/credentials.module.css'
 import hamburgerMenu from './images/icon-hamburger.svg';
 import arrowDark from './images/icon-arrow-dark.svg';
+import arrowLight from './images/icon-arrow-light.svg';
 
-const menuList = [
+const menuData = [
   {
     name: "Product",
     links: ["Overview", "Pricing", "Marketplace", "Features", "Integrations",],
@@ -24,48 +26,111 @@ const menuList = [
 
 function Navbar() {
   const [menuOpened, setMenuOpened] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const eventshit = () => {
+    setWindowWidth(prev => window.innerWidth)
+    //console.log(`ref ${ref}`);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", eventshit)
+    return () => {
+      window.removeEventListener("resize", eventshit)
+    }
+  }, [])
+
+  useEffect(() => {
+    windowWidth >= 768
+      ? setMenuOpened(prev => true)
+      : setMenuOpened(prev => false)
+  }, [windowWidth])
 
   return (
     <nav className={style.navbar}>
       <h1 className={style.navbar__title}>Blogr</h1>
 
-      <input className={style.navbar__button} type="image" src={hamburgerMenu} alt="" onClick={() => setMenuOpened(prev => !prev)} />
+      {windowWidth < 768 && <input
+        className={style.navbar__button}
+        type="image"
+        src={hamburgerMenu}
+        alt=""
+        onClick={() => setMenuOpened(prev => !prev)}
+      />}
 
-      <Menu menuOpened={menuOpened} />
+      <Menu menuOpened={menuOpened} windowWidth={windowWidth} />
     </nav>
   )
 }
 
-function Menu({ menuOpened }) {
-  const [currOpenContainer, setCurrOpenContainer] = useState();
+function Menu({ menuOpened, windowWidth }) {
+  const [openCategory, setOpenCategory] = useState();
 
-  function openLinkContainer(name) {
-    setCurrOpenContainer(prev => (prev === name ? "" : name))
+  const desktopWidth = 768;
+
+  function openThisCategory(name) {
+    setOpenCategory(prev => (prev === name ? "" : name))
+  }
+  function isDesktopView() {
+    return windowWidth >= desktopWidth ? true : false
+  }
+
+  function categoryOpen(menu) {
+    return openCategory === menu.name ? true : false
   }
 
   return (
-    <div className={`${style.menu} ${menuOpened && style.menuClose} `}>
-      {menuList.map((menu) => (
-        <section key={menu.name} className={style.menu__section}>
-          <button className={`${style.menu__category} ${currOpenContainer === menu.name && style.menu__categorySelected}`} onClick={() => openLinkContainer(menu.name)}>
-            <h4>{menu.name}</h4>
-            <img className={`${style.arrow} ${currOpenContainer === menu.name && style.arrow_close}`} src={arrowDark} alt="" />
-          </button>
+    <div
+      className={`
+      ${style.menu}
+      ${isDesktopView() || util.shadow}
+      ${menuOpened || style.menuClose} 
+      `}
+    >
+      <div className={style.menu__menuGroupSection}>
+        {menuData.map((menu) => (
+          <section key={menu.name} className={style.menu__categoryContainer}>
 
-          <div className={`${style.menu__linkContainer} ${currOpenContainer === menu.name || style.menuClose}`}>
-            {menu.links.map((link) => (
-              <a className={style.menu__link} href="/">{link}</a>
-            ))}
-          </div>
-        </section>
-      ))}
+            <button
+              className={`
+                ${style.menu__categoryBtn}
+                ${categoryOpen(menu) && style.menu__categorySelected}
+              `}
+              onClick={() => openThisCategory(menu.name)}
+            >
+              <h4>{menu.name}</h4>
+
+              <img
+                className={`
+                  ${style.arrow}
+                  ${categoryOpen(menu) && style.arrow_close}
+                `}
+                src={windowWidth >= desktopWidth ? arrowLight : arrowDark}
+                alt=""
+              />
+            </button>
+
+            <div
+              className={`
+                ${style.menu__linkContainer}
+                ${isDesktopView() && util.shadow}
+                ${categoryOpen(menu) || style.menuClose}
+              ` }
+            >
+              {menu.links.map((link) => (
+                <a key={link} className={style.menu__link} href="/">{link}</a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
 
       <section className={credStyle.credentials}>
         <a className={credStyle.login} href="/">Login</a>
-        <a className={credStyle.signup} href="/">Sign Up</a>
+        <a className={`${credStyle.signup} ${util.shadow}`} href="/">Sign Up</a>
       </section>
-    </div>
+    </div >
   )
 }
+
 export default Navbar
-//

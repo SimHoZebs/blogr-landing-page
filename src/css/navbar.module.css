@@ -18,19 +18,21 @@
   width: 100%;
   max-height: 100vh;
   background: white;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   transition: all 500ms;
   overflow: hidden;
   z-index: 2;
 }
 
-.navbar .menu__section {
+.navbar .menu__menuGroupSection {
   width: 100%;
+}
+
+.navbar .menu__categoryContainer {
   margin-bottom: 1.5rem;
 }
 
-.navbar .menu__category {
+.navbar .menu__categoryBtn {
   color: #1f3f5b;
   margin: 0 auto;
   display: flex;
@@ -39,12 +41,12 @@
   transition: all 500ms;
 }
 
-.navbar .menu__category .arrow {
+.navbar .menu__categoryBtn .arrow {
   margin-left: 0.5rem;
   transition: all 500ms;
 }
 
-.navbar .menu__category .arrow_close {
+.navbar .menu__categoryBtn .arrow_close {
   transform: rotate(180deg);
 }
 
@@ -75,9 +77,51 @@
   height: auto;
 }
 
+.navbar .menu__link:hover {
+  font-weight: 700;
+}
+
 .navbar .menuClose {
   max-height: 0;
   padding: 0;
   margin-top: 0;
   box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .menu {
+    justify-content: space-between;
+    margin-left: 4rem;
+    padding: 0;
+    background: none;
+    position: static;
+    flex-direction: row;
+  }
+  .navbar .menu__menuGroupSection {
+    display: flex;
+  }
+  .navbar .menu__categoryContainer {
+    margin: 0;
+    margin-right: 1.875rem;
+  }
+  .navbar .menu__categoryBtn {
+    color: white;
+    font-weight: 400;
+    padding: 0;
+  }
+  .navbar .menu__categoryBtn .arrow {
+    color: white;
+  }
+  .navbar .menu__linkContainer {
+    position: absolute;
+    padding: 1.75rem 1.5625rem;
+    text-align: start;
+    background: white;
+  }
+  .navbar .menu .menuClose {
+    max-height: 0;
+    padding: 0;
+    margin-top: 0;
+    box-shadow: none;
+  }
 }

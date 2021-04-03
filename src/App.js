@@ -1,9 +1,9 @@
 import 'normalize.css';
 import './css/global.module.css'
 
-import Hero from './Hero.js'
-import Main from './Main.js'
-import Footer from './Footer.js'
+import Hero from './Hero'
+import Main from './Main'
+import Footer from './Footer'
 
 function App() {
 

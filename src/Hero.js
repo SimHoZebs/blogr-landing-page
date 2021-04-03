@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Navbar from './Navbar.js'
+import Navbar from './Navbar'
 
 import style from './css/hero.module.css'
 import bgPatternIntro from './images/bg-pattern-intro.svg';
@@ -17,7 +17,7 @@ function Hero() {
       <Navbar />
 
       <header className={style.header}>
-        <h1>A modern</h1> <h1> publishing platform</h1>
+        <h1>A modern publishing platform</h1>
 
         <p>Grow your audience and build your online brand</p>
       </header>

@@ -4,7 +4,7 @@
   margin-bottom: 6.625rem;
 }
 
-.bgImgContainer {
+.hero .bgImgContainer {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -14,104 +14,47 @@
   background: linear-gradient(to bottom right, #ff8f70, #ff3d57);
 }
 
-.bgImgContainer .bgImg {
+.hero .bgImgContainer .bgImg {
   position: absolute;
   height: calc(100vw + 52.5rem);
   transform: translate(-25%, -20%);
 }
 
-.navbar {
-  display: flex;
-  margin: 0 1.5rem;
-  padding-top: 3.625rem;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.navbar__title {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-}
-
-.navbar .menu {
-  font-family: "Ubuntu", sans-serif;
-  display: flex;
-  width: 85vw;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  background: white;
-  top: 130%;
-  padding: 2.25rem 0 2rem 0;
-  box-shadow: 1px 1px 5px 1px black;
-  overflow: hidden;
-  transition: all 3s;
-}
-
-.navbar .menu__section {
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 1.5rem;
-}
-
-.navbar .menu__button {
-  color: #4b5862;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  border: none;
-}
-
-.navbar .menu__linkContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 1.75rem;
-  padding: 1.75rem 0;
-  background: #c8c8cb;
-  overflow: hidden;
-}
-
-.navbar .menu__linkContainer :not(:first-child) {
-  margin-top: 1.75rem;
-}
-
-.navbar .menu__link {
-  color: #1f3f5b;
-}
-
-.navbar .menuClosed {
-  padding: 0;
-  margin: 0;
-  height: 0;
-  box-shadow: none;
-}
-
-.header {
+.hero .header {
   margin-top: 3.375rem;
   text-align: center;
 }
 
-.header p {
+.hero .header h1 {
+  margin: 0 2rem;
+}
+
+.hero .header p {
   margin: 1.25rem 3.125rem 0;
 }
 
-.btnContainer {
+.hero .btnContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.btnContainer button {
+.hero .btnContainer button {
   font-size: 0.75rem;
   color: inherit;
   border: 1px solid white;
   border-radius: 2rem;
-  padding: 1rem 1.5rem;
-  margin: 3.375rem 0 9.75rem 0;
+  padding: 1rem 1.125rem;
+  margin: 3.375rem 0 9.75rem 0.4375rem;
 }
 
-.btnContainer .cta {
+.hero .btnContainer .cta {
   color: #ff525d;
   background: white;
+  margin: 3.375rem 0.4375rem 9.75rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 62px;
+  }
 }

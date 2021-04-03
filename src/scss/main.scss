@@ -41,6 +41,7 @@
   margin: 0;
   padding: 0;
   width: calc(100vw + 2rem);
+  max-width: calc(450px + 2rem);
   transform: translate(0%);
 }
 
@@ -68,6 +69,7 @@
   &__phones {
     position: absolute;
     width: calc(100vw - 1.8rem);
+    max-width: calc(450px - 1.8rem);
     transform: translate(-50%, -50%);
     z-index: 2;
   }
@@ -90,4 +92,7 @@
     color: white;
     z-index: 2;
   }
+}
+
+@media only screen and (min-width: 768px) {
 }
