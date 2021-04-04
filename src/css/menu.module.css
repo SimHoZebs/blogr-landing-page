@@ -1,0 +1,155 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.25rem 1.5rem 2rem;
+  position: absolute;
+  top: 130%;
+  width: 100%;
+  max-height: 100vh;
+  background: white;
+  border-radius: 0.5rem;
+  transition: all 500ms;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.nav__menuBar {
+  width: 100%;
+}
+
+.nav__menuContainer {
+  margin-bottom: 1.5rem;
+}
+
+.nav__menuBtn {
+  color: #1f3f5b;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: none;
+  transition: all 500ms;
+}
+
+.nav__menuBtn .arrow {
+  margin-left: 0.5rem;
+  transition: all 500ms;
+}
+
+.nav__menuBtn .arrow_close {
+  transform: rotate(180deg);
+}
+
+.nav__menuSelected {
+  color: #4b5862;
+}
+
+.nav__linkContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #efeff1;
+  font-weight: 500;
+  overflow: hidden;
+  transition: all 500ms;
+  margin-top: 1.75rem;
+  padding: 1.75rem 0;
+  max-height: 50vh;
+  border-radius: 0.5rem;
+}
+
+.nav__linkContainer :not(:first-child) {
+  margin-top: 1.75rem;
+}
+
+.nav__link {
+  color: #4b5862;
+  height: auto;
+}
+
+.nav__link:hover {
+  font-weight: 700;
+}
+
+.credentials {
+  padding-top: 1.25rem;
+  width: 100%;
+  border-top: 1px solid #c8c8cb;
+}
+
+.credentials a {
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #1f3f5b;
+  display: block;
+  border-radius: 5rem;
+  width: max-content;
+}
+
+.credentials .signup {
+  padding: 1rem 2.5rem;
+  color: white;
+  background: linear-gradient(to right, #ff8f70, #ff3d57);
+}
+
+.menuClose {
+  max-height: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    margin-left: 4rem;
+    padding: 0;
+    background: none;
+    position: static;
+    flex-direction: row;
+  }
+  .nav__menuBar {
+    display: flex;
+  }
+  .nav__menuContainer {
+    margin: 0;
+    margin-right: 1.875rem;
+  }
+  .nav__menuBtn {
+    color: white;
+    font-weight: 400;
+    padding: 0;
+  }
+  .nav__menuBtn .arrow {
+    color: white;
+  }
+  .nav__linkContainer {
+    position: absolute;
+    padding: 1.75rem 1.5625rem;
+    text-align: start;
+    background: white;
+  }
+  .menuClose {
+    max-height: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+  .credentials {
+    padding: 0;
+    width: max-content;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  .credentials a {
+    margin: 0;
+    padding-left: 0;
+    display: initial;
+    height: min-content;
+  }
+  .credentials .signup {
+    color: #ff525d;
+    background: white;
+  }
+}
