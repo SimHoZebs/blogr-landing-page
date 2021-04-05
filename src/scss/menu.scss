@@ -100,6 +100,12 @@ $transitionTime: 500ms;
     padding: 1rem 2.5rem;
     color: white;
     background: linear-gradient(to right, $veryLightRedGrad, $lightRedGrad);
+
+    &:hover {
+      color: white;
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.25);
+    }
   }
 }
 
@@ -159,6 +165,7 @@ $transitionTime: 500ms;
     align-items: center;
 
     a {
+      color: white;
       margin: 0;
       padding-left: 0;
       display: initial;

@@ -47,14 +47,29 @@
   margin: 3.375rem 0 9.75rem 0.4375rem;
 }
 
+.hero .btnContainer button:hover {
+  background: white;
+  color: #ff525d;
+}
+
 .hero .btnContainer .cta {
   color: #ff525d;
   background: white;
   margin: 3.375rem 0.4375rem 9.75rem 0;
 }
 
+.hero .btnContainer .cta:hover {
+  border: none;
+  color: white;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.25);
+}
+
 @media only screen and (min-width: 768px) {
-  .header h1 {
+  .hero .header h1 {
     font-size: 62px;
+  }
+  .hero .btnContainer button {
+    color: white;
   }
 }

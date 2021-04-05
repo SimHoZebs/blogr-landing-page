@@ -1,5 +1,7 @@
+import React, { useState, useEffect } from 'react'
+
 import mainData from './data/mainData'
-import Block from './Block'
+import Article from './Article'
 
 import style from './css/main.module.css'
 
@@ -8,27 +10,42 @@ import editorMobile from './images/illustration-editor-mobile.svg'
 import editorDesktop from './images/illustration-editor-desktop.svg'
 import phones from './images/illustration-phones.svg'
 import laptopMobile from './images/illustration-laptop-mobile.svg'
-
-let something = -1;
+import laptopDesktop from './images/illustration-laptop-desktop.svg'
 
 function Main() {
+  const [windowWidth, setWindowWidth] = useState()
 
-  function data() {
-    something++;
-    return mainData[something]
+  const resizeEvent = () => {
+    setWindowWidth(prev => window.innerWidth)
+  }
+
+  useEffect(() => {
+    setWindowWidth(prev => window.innerWidth)
+    window.addEventListener("resize", resizeEvent)
+    return () => {
+      window.removeEventListener("resize", resizeEvent)
+    }
+  }, [])
+
+  function data(index) {
+    return mainData[index]
+  }
+
+  function isDesktopView() {
+    return windowWidth >= 768 ? true : false
   }
 
   return (
     <div className={style.mainContainer}>
-      <Block data={data()} img={editorDesktop} side={'right'} />
+      <Article data={data(0)} img={isDesktopView() ? editorDesktop : editorMobile} side={'right'} />
 
-      <Block data={data()} isInfra={true} img={phones}>
+      <Article data={data(1)} isInfra={true} img={phones}>
         <div className={style.infra__imgContainer}>
           <img className={style.infra__bg} src={patternCircle} alt="" />
         </div>
-      </Block>
+      </Article>
 
-      <Block data={data()} img={laptopMobile} />
+      <Article data={data(2)} img={isDesktopView() ? laptopDesktop : laptopMobile} side={'left'} />
 
     </div>
   )

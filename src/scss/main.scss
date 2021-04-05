@@ -2,14 +2,17 @@
 
 .mainContainer {
   height: max-content;
-
-  * {
-    // padding: 0.5rem 0;
-    margin: 1.5rem 0;
-  }
 }
 
 .infra {
+  &__bg {
+    position: absolute;
+    width: 628px;
+    left: 0;
+    transform-origin: left center;
+    transform: translate(-124px, -245px);
+  }
+
   &__imgContainer {
     background: linear-gradient(
       to bottom right,
@@ -18,8 +21,8 @@
     );
     overflow: hidden;
     position: absolute;
-    top: -100%;
-    height: calc(250%);
+    height: 39rem;
+    transform: translate(0, -123px);
     width: 100%;
     z-index: -1;
     border-radius: 0 5rem 0 5rem;
@@ -29,11 +32,16 @@
 
 @media only screen and (min-width: 768px) {
   .infra {
+    &__bg {
+      bottom: -101px;
+      left: -191px;
+      height: 1008px;
+      width: 982px;
+    }
     &__imgContainer {
-      top: 0;
       right: 0;
-      transform: translate(0, 0%);
-      height: calc(100%);
+      transform: inherit;
+      height: 25rem;
       width: 100vw;
     }
   }

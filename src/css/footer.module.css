@@ -1,4 +1,5 @@
 .footer {
+  align-items: flex-start;
   background: #25252d;
   text-align: center;
   color: white;
@@ -6,6 +7,10 @@
   padding-top: 4.275rem;
   padding-bottom: 3.875rem;
   border-radius: 0 6rem 0 0;
+}
+
+.footer .title {
+  margin: 2.1875rem 0;
 }
 
 .footer h1 {
@@ -22,7 +27,6 @@
 }
 
 .footer li a {
-  margin: 0 auto;
   color: #c8c8cb;
 }
 
@@ -30,6 +34,13 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 2.1875rem 0;
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+  }
+  .footer .title {
+    margin-top: 0;
+  }
 }

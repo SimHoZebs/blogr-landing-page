@@ -1,6 +1,7 @@
 @import "variables";
 
 .footer {
+  align-items: flex-start;
   background: $veryDarkBlackBlue;
   text-align: center;
   color: white;
@@ -9,6 +10,9 @@
   padding-bottom: 3.875rem;
   border-radius: 0 6rem 0 0;
 
+  .title {
+    margin: 2.1875rem 0;
+  }
   h1 {
     @include ubuntu;
   }
@@ -22,7 +26,6 @@
     }
 
     a {
-      margin: 0 auto;
       color: $grayishBlue;
     }
 
@@ -32,6 +35,14 @@
   }
 }
 
-.title {
-  margin: 2.1875rem 0;
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+
+    .title {
+      margin-top: 0;
+    }
+  }
 }

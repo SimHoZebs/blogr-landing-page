@@ -94,6 +94,12 @@
   background: linear-gradient(to right, #ff8f70, #ff3d57);
 }
 
+.credentials .signup:hover {
+  color: white;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.25);
+}
+
 .menuClose {
   max-height: 0;
   padding: 0;
@@ -143,6 +149,7 @@
     align-items: center;
   }
   .credentials a {
+    color: white;
     margin: 0;
     padding-left: 0;
     display: initial;

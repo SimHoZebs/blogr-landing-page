@@ -49,20 +49,39 @@
       border-radius: 2rem;
       padding: 1rem 1.125rem;
       margin: 3.375rem 0 9.75rem 0.4375rem;
+
+      &:hover {
+        background: white;
+        color: $lightRed;
+      }
     }
 
     .cta {
       color: $lightRed;
       background: white;
       margin: 3.375rem 0.4375rem 9.75rem 0;
+
+      &:hover {
+        border: none;
+        color: white;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.25);
+      }
     }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
-    h1 {
-      font-size: 62px;
+  .hero {
+    .header {
+      h1 {
+        font-size: 62px;
+      }
+    }
+    .btnContainer {
+      button {
+        color: white;
+      }
     }
   }
 }
