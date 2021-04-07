@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
 
-import mainData from './data/mainData'
+import mainData from './mainData'
 import Article from './Article'
 
-import style from './css/main.module.css'
+import style from '../css/main.module.css'
 
-import patternCircle from './images/bg-pattern-circles.svg'
-import editorMobile from './images/illustration-editor-mobile.svg'
-import editorDesktop from './images/illustration-editor-desktop.svg'
-import phones from './images/illustration-phones.svg'
-import laptopMobile from './images/illustration-laptop-mobile.svg'
-import laptopDesktop from './images/illustration-laptop-desktop.svg'
+import patternCircle from '../images/bg-pattern-circles.svg'
+import editorMobile from '../images/illustration-editor-mobile.svg'
+import editorDesktop from '../images/illustration-editor-desktop.svg'
+import phones from '../images/illustration-phones.svg'
+import laptopMobile from '../images/illustration-laptop-mobile.svg'
+import laptopDesktop from '../images/illustration-laptop-desktop.svg'
 
 function Main() {
   const [windowWidth, setWindowWidth] = useState()

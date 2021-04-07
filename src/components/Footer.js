@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './css/footer.module.css'
-import footerData from './data/footerData'
+import style from '../css/footer.module.css'
+import footerData from './footerData'
 
 function Footer() {
   return (

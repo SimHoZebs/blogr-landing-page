@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './css/image.module.css'
+import style from '../css/image.module.css'
 
 function Image(props) {
 
@@ -14,27 +14,14 @@ function Image(props) {
     }
   }
 
-  function wrapperStyle(side) {
-    switch (side) {
-      case 'left':
-        return style.imgWrapper_left;
-      case 'right':
-        return style.imgWrapper_right;
-      default:
-        return "";
-    }
-  }
-
   return (
     <div className={style.imgContainer}>
-      {/* <div className={` ${style.imgWrapper} ${wrapperStyle(props.side)} `} > */}
       <img
         className={` ${style.img} ${imgStyle(props.side)} `}
         src={props.img}
         alt=""
       />
     </div>
-    // </div>
   )
 }
 

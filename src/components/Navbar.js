@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Menu from './Menu'
 
 
-import style from './css/navbar.module.css'
-import hamburgerMenu from './images/icon-hamburger.svg';
+import style from '../css/navbar.module.css'
+import hamburgerMenu from '../images/icon-hamburger.svg';
 
 
 function Navbar() {

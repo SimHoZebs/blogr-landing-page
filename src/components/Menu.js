@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-import menuData from './data/menuData'
+import menuData from './menuData'
 
-import style from './css/menu.module.css'
-import util from './css/util.module.css'
+import style from '../css/menu.module.css'
+import util from '../css/util.module.css'
 
-import arrowDark from './images/icon-arrow-dark.svg';
-import arrowLight from './images/icon-arrow-light.svg';
+import arrowDark from '../images/icon-arrow-dark.svg';
+import arrowLight from '../images/icon-arrow-light.svg';
 
 function Menu({ menuBlockOpen, windowWidth }) {
   const [openMenu, setOpenMenu] = useState();

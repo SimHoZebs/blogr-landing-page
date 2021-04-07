@@ -2,8 +2,8 @@ import React from 'react'
 
 import Navbar from './Navbar'
 
-import style from './css/hero.module.css'
-import bgPatternIntro from './images/bg-pattern-intro.svg';
+import style from '../css/hero.module.css'
+import bgPatternIntro from '../images/bg-pattern-intro.svg';
 
 function Hero() {
 

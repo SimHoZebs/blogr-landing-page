@@ -1,4 +1,4 @@
-import style from './css/block.module.css'
+import style from '../css/article.module.css'
 
 import Image from './Image'
 
