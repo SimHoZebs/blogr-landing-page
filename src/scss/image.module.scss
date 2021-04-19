@@ -17,19 +17,19 @@
     width: auto;
     max-width: 100vw;
     height: 36.125rem;
-    max-height: 50vw;
+    max-height: 55vw;
 
     transform-origin: center;
     &_right {
       top: 0;
-      transform: translateX(18%);
-      height: 49.125rem;
+      transform: translateX(10%);
+      height: 53.125rem;
     }
 
     &_left {
       top: 0;
-      transform: translateX(-28%);
-      height: 49.125rem;
+      transform: translateX(-29%);
+      height: 53.125rem;
     }
   }
 }

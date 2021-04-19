@@ -3,7 +3,11 @@
   display: flex;
   margin: 0 1.5rem;
   padding-top: 3.625rem;
+  padding-left: 10.25rem;
+  padding-right: 10.25rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
+
+/*# sourceMappingURL=navbar.module.css.map */

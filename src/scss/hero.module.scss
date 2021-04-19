@@ -12,16 +12,12 @@
     height: 100%;
     z-index: -1;
     border-radius: 0 0 0 7rem;
-    background: linear-gradient(
-      to bottom right,
-      $veryLightRedGrad,
-      $lightRedGrad
-    );
+    background: linear-gradient(to right, $veryLightRedGrad, $lightRedGrad);
 
     .bgImg {
       position: absolute;
-      height: calc(100vw + 52.5rem);
-      transform: translate(-25%, -20%);
+      height: calc(100vw + 95.5rem);
+      transform: translate(-13%, -43%);
     }
   }
 

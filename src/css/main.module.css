@@ -9,7 +9,6 @@
   transform-origin: left center;
   transform: translate(-124px, -245px);
 }
-
 .infra__imgContainer {
   background: linear-gradient(to bottom right, #2c2d3f, #3f4164);
   overflow: hidden;
@@ -36,3 +35,5 @@
     width: 100vw;
   }
 }
+
+/*# sourceMappingURL=main.module.css.map */

@@ -3,7 +3,6 @@
   color: white;
   margin-bottom: 6.625rem;
 }
-
 .hero .bgImgContainer {
   overflow: hidden;
   position: absolute;
@@ -11,33 +10,27 @@
   height: 100%;
   z-index: -1;
   border-radius: 0 0 0 7rem;
-  background: linear-gradient(to bottom right, #ff8f70, #ff3d57);
+  background: linear-gradient(to right, #ff8f70, #ff3d57);
 }
-
 .hero .bgImgContainer .bgImg {
   position: absolute;
-  height: calc(100vw + 52.5rem);
-  transform: translate(-25%, -20%);
+  height: calc(100vw + 95.5rem);
+  transform: translate(-13%, -43%);
 }
-
 .hero .header {
   margin-top: 3.375rem;
   text-align: center;
 }
-
 .hero .header h1 {
   margin: 0 2rem;
 }
-
 .hero .header p {
   margin: 1.25rem 3.125rem 0;
 }
-
 .hero .btnContainer {
   display: flex;
   justify-content: center;
 }
-
 .hero .btnContainer button {
   font-size: 0.75rem;
   color: inherit;
@@ -46,18 +39,15 @@
   padding: 1rem 1.125rem;
   margin: 3.375rem 0 9.75rem 0.4375rem;
 }
-
 .hero .btnContainer button:hover {
   background: white;
   color: #ff525d;
 }
-
 .hero .btnContainer .cta {
   color: #ff525d;
   background: white;
   margin: 3.375rem 0.4375rem 9.75rem 0;
 }
-
 .hero .btnContainer .cta:hover {
   border: none;
   color: white;
@@ -73,3 +63,5 @@
     color: white;
   }
 }
+
+/*# sourceMappingURL=hero.module.css.map */

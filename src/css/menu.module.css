@@ -13,15 +13,12 @@
   overflow: hidden;
   z-index: 2;
 }
-
 .nav__menuBar {
   width: 100%;
 }
-
 .nav__menuContainer {
   margin-bottom: 1.5rem;
 }
-
 .nav__menuBtn {
   color: #1f3f5b;
   margin: 0 auto;
@@ -30,20 +27,16 @@
   border: none;
   transition: all 500ms;
 }
-
 .nav__menuBtn .arrow {
   margin-left: 0.5rem;
   transition: all 500ms;
 }
-
 .nav__menuBtn .arrow_close {
   transform: rotate(180deg);
 }
-
 .nav__menuSelected {
   color: #4b5862;
 }
-
 .nav__linkContainer {
   display: flex;
   flex-direction: column;
@@ -57,16 +50,13 @@
   max-height: 50vh;
   border-radius: 0.5rem;
 }
-
 .nav__linkContainer :not(:first-child) {
   margin-top: 1.75rem;
 }
-
 .nav__link {
   color: #4b5862;
   height: auto;
 }
-
 .nav__link:hover {
   font-weight: 700;
 }
@@ -76,7 +66,6 @@
   width: 100%;
   border-top: 1px solid #c8c8cb;
 }
-
 .credentials a {
   margin: 0 auto;
   padding: 1rem 2.5rem;
@@ -87,13 +76,11 @@
   border-radius: 5rem;
   width: max-content;
 }
-
 .credentials .signup {
   padding: 1rem 2.5rem;
   color: white;
   background: linear-gradient(to right, #ff8f70, #ff3d57);
 }
-
 .credentials .signup:hover {
   color: white;
   box-shadow: none;
@@ -136,11 +123,13 @@
     text-align: start;
     background: white;
   }
+
   .menuClose {
     max-height: 0;
     padding: 0;
     margin-top: 0;
   }
+
   .credentials {
     padding: 0;
     width: max-content;
@@ -160,3 +149,5 @@
     background: white;
   }
 }
+
+/*# sourceMappingURL=menu.module.css.map */
