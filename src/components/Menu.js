@@ -34,7 +34,7 @@ function Menu({ menuBlockOpen, windowWidth }) {
     >
       <div className={style.nav__menuBar}>
         {menuData.map((menu) => (
-          <section key={menu.name} className={style.nav__menuContainer}>
+          <div key={menu.name} className={style.nav__menuContainer}>
 
             <button
               className={`
@@ -66,7 +66,7 @@ function Menu({ menuBlockOpen, windowWidth }) {
                 <a key={link} className={style.nav__link} href="/">{link}</a>
               ))}
             </div>
-          </section>
+          </div>
         ))}
       </div>
 
