@@ -43,7 +43,7 @@ function Menu({ menuBlockOpen, windowWidth }) {
               `}
               onClick={() => openThisMenu(menu.name)}
             >
-              <h4>{menu.name}</h4>
+              <span className={style.nav__btnName}>{menu.name}</span>
 
               <img
                 className={`

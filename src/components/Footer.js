@@ -12,11 +12,11 @@ function Footer() {
         <div key={section.title}>
           <h4 className={style.title}>{section.title}</h4>
 
-          <li>
+          <div>
             {section.links.map(link => (
               <a key={link} href="/">{link}</a>
             ))}
-          </li>
+          </div>
         </div>
       ))}
     </div>

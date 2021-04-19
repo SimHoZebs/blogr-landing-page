@@ -38,7 +38,7 @@ function Article(props) {
 
         <Image side={props.side} img={props.img} />
 
-        <section className={`${style.blockSection} `}>
+        <div className={`${style.blockSection} `}>
 
 
           {props.data.desc.map(({ title, desc }) => (
@@ -50,7 +50,7 @@ function Article(props) {
           ))}
 
           {props.children}
-        </section>
+        </div>
       </div>
     </article >
   )

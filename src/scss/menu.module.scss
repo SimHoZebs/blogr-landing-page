@@ -47,6 +47,10 @@ $transitionTime: 500ms;
     }
   }
 
+  &__btnName {
+    font-weight: $overpassBold;
+  }
+
   &__menuSelected {
     color: $veryDarkGrayishBlue;
   }

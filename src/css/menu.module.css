@@ -34,6 +34,9 @@
 .nav__menuBtn .arrow_close {
   transform: rotate(180deg);
 }
+.nav__btnName {
+  font-weight: 600;
+}
 .nav__menuSelected {
   color: #4b5862;
 }
