@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27d6df8b.chunk.css",
+    "main.js": "/static/js/main.b9d78f1c.chunk.js",
+    "main.js.map": "/static/js/main.b9d78f1c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f278c145.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f278c145.js.map",
+    "static/css/2.679831fc.chunk.css": "/static/css/2.679831fc.chunk.css",
+    "static/js/2.3f86bbd0.chunk.js": "/static/js/2.3f86bbd0.chunk.js",
+    "static/js/2.3f86bbd0.chunk.js.map": "/static/js/2.3f86bbd0.chunk.js.map",
+    "static/js/3.08948d1c.chunk.js": "/static/js/3.08948d1c.chunk.js",
+    "static/js/3.08948d1c.chunk.js.map": "/static/js/3.08948d1c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/static/css/2.679831fc.chunk.css.map",
+    "static/css/main.27d6df8b.chunk.css.map": "/static/css/main.27d6df8b.chunk.css.map",
+    "static/js/2.3f86bbd0.chunk.js.LICENSE.txt": "/static/js/2.3f86bbd0.chunk.js.LICENSE.txt",
+    "static/media/bg-pattern-circles.bae804b8.svg": "/static/media/bg-pattern-circles.bae804b8.svg",
+    "static/media/bg-pattern-intro.bf6b3e1b.svg": "/static/media/bg-pattern-intro.bf6b3e1b.svg",
+    "static/media/icon-arrow-dark.5215f8d9.svg": "/static/media/icon-arrow-dark.5215f8d9.svg",
+    "static/media/icon-arrow-light.9ba0f38e.svg": "/static/media/icon-arrow-light.9ba0f38e.svg",
+    "static/media/icon-hamburger.68867946.svg": "/static/media/icon-hamburger.68867946.svg",
+    "static/media/illustration-editor-desktop.c6c8050a.svg": "/static/media/illustration-editor-desktop.c6c8050a.svg",
+    "static/media/illustration-editor-mobile.b9c7941a.svg": "/static/media/illustration-editor-mobile.b9c7941a.svg",
+    "static/media/illustration-laptop-desktop.799209c2.svg": "/static/media/illustration-laptop-desktop.799209c2.svg",
+    "static/media/illustration-laptop-mobile.fe1ec0f0.svg": "/static/media/illustration-laptop-mobile.fe1ec0f0.svg",
+    "static/media/illustration-phones.fd23559f.svg": "/static/media/illustration-phones.fd23559f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f278c145.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.3f86bbd0.chunk.js",
+    "static/css/main.27d6df8b.chunk.css",
+    "static/js/main.b9d78f1c.chunk.js"
+  ]
+}
