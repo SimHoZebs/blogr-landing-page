@@ -41,12 +41,12 @@ Users should be able to:
 
 ### What I learned
 
-Better understanding of client side rendering, especially how React handles it.
-Recognizing how a website’s layout divides and relationships between the components within the layout.
-Using the above understanding to form a good idea on the CSS structure.
-How to create a smooth, responsive accordion style mobile menu.
-Semantics of the section and article tag, in a sense that it expects a header tag in it.
-How React handles image import.
+- Better understanding of client side rendering, especially how React handles it.
+- Recognizing how a website’s layout divides and relationships between the components within the layout.
+- Using the above understanding to form a good idea on the CSS structure.
+- How to create a smooth, responsive accordion style mobile menu.
+- Semantics of the section and article tag, in a sense that it expects a header tag in it.
+- How React handles image import.
 
 ### Continued development
 
