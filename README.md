@@ -52,7 +52,7 @@ Users should be able to:
 
 While my project files are sorted accordingly, it can be improved to be more scalable and support bigger projects, and I’ll just need more experience with those to improve. I also need those experiences to be quicker at recognizing website structure and building components accordingly. I ended up with a good understanding of the structure and on how to separate responsibilities of each component, but it had to go through a handful of changes to get there.
 
-Animation, grid display and SCSS functions are still foreign to me, and learning them should help increase the efficiency and scalability of my workflow more than it already is. I should also try to learn some CSS frameworks so I don’t waste time reinventing the wheel. Finally, a server side javascript
+Animation, grid display and SCSS functions are still foreign to me, and learning them should help increase the efficiency and scalability of my workflow more than it already is. I should also try to learn some CSS frameworks so I don’t waste time reinventing the wheel. Finally, a server side render tech seems to be helpful to improve site load time.
 
 ## Author
 
