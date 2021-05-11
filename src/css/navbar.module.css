@@ -3,11 +3,21 @@
   display: flex;
   margin: 0 1.5rem;
   padding-top: 3.625rem;
-  padding-left: 10.25rem;
-  padding-right: 10.25rem;
+  padding-left: 11.39%;
+  padding-right: 11.39%;
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+.navbar__title {
+  font-weight: 600;
+  font-size: 32px;
+}
+@media (max-width: 1024px) {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /*# sourceMappingURL=navbar.module.css.map */

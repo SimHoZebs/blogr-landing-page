@@ -10,9 +10,9 @@ function Footer() {
 
       {footerData.map(section => (
         <div key={section.title}>
-          <h4 className={style.title}>{section.title}</h4>
+          <h4 className={style.footer__title}>{section.title}</h4>
 
-          <div>
+          <div className={style.footer__links}>
             {section.links.map(link => (
               <a key={link} href="/">{link}</a>
             ))}

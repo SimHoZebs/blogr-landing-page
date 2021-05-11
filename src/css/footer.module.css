@@ -8,23 +8,21 @@
   padding-bottom: 3.875rem;
   border-radius: 0 6rem 0 0;
 }
-.footer .title {
+.footer__title {
   margin: 2.1875rem 0;
-}
-.footer h1 {
   font-family: "Ubuntu", sans-serif;
 }
-.footer li {
+.footer__links {
   display: flex;
   flex-direction: column;
 }
-.footer li :not(:first-child) {
+.footer__links :not(:first-child) {
   margin-top: 1.1875rem;
 }
-.footer li a {
+.footer__links a {
   color: #c8c8cb;
 }
-.footer li :hover {
+.footer__links :hover {
   text-decoration: underline;
 }
 
@@ -34,7 +32,7 @@
     justify-content: space-evenly;
     text-align: start;
   }
-  .footer .title {
+  .footer__title {
     margin-top: 0;
   }
 }

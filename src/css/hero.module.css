@@ -3,7 +3,7 @@
   color: white;
   margin-bottom: 6.625rem;
 }
-.hero .bgImgContainer {
+.hero .bgContainer {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -12,19 +12,19 @@
   border-radius: 0 0 0 7rem;
   background: linear-gradient(to right, #ff8f70, #ff3d57);
 }
-.hero .bgImgContainer .bgImg {
+.hero__bg {
   position: absolute;
   height: calc(100vw + 95.5rem);
   transform: translate(-13%, -43%);
 }
-.hero .header {
+.hero__header {
   margin-top: 3.375rem;
   text-align: center;
 }
-.hero .header h1 {
+.hero__header h1 {
   margin: 0 2rem;
 }
-.hero .header p {
+.hero__header p {
   margin: 1.25rem 3.125rem 0;
 }
 .hero .btnContainer {
@@ -56,7 +56,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero .header h1 {
+  .hero .hero__header h1 {
     font-size: 62px;
   }
   .hero .btnContainer button {

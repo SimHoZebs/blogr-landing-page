@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     <nav className={style.navbar}>
-      <h1 className={style.navbar__title}>Blogr</h1>
+      <div className={style.navbar__title}>Blogr</div>
 
       {windowWidth < 768 && <input
         className={style.navbar__button}

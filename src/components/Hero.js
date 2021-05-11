@@ -9,15 +9,15 @@ function Hero() {
 
   return (
     <section className={style.hero}>
-      <div className={style.bgImgContainer}>
+      <div className={style.bgContainer}>
 
-        <img className={style.bgImg} src={bgPatternIntro} alt="" />
+        <img className={style.hero__bg} src={bgPatternIntro} alt="" />
       </div>
 
       <Navbar />
 
-      <header className={style.header}>
-        <h2>A modern publishing platform</h2>
+      <header className={style.hero__header}>
+        <h1>A modern publishing platform</h1>
 
         <p>Grow your audience and build your online brand</p>
       </header>
