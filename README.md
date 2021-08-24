@@ -6,6 +6,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,9 +23,31 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Links
+### Screenshots
 
-- Solution URL: [https://yusukzebs.github.io/blogr-landing-page/](https://yusukzebs.github.io/blogr-landing-page/)
+Click the images to view them larger!
+
+<table align="center">
+  <tr>
+    <th>
+      <img src="https://user-images.githubusercontent.com/47174250/130537238-9bf65623-2e03-44f4-a92d-450db01fe747.jpeg" height=600>
+    </th>
+    <th>
+      <img src="https://user-images.githubusercontent.com/47174250/130537640-81f9e065-55c2-4bbc-95d4-01ca958a7b53.jpeg" height=600>
+    </th>
+  </tr>
+  <tr>
+    <th>
+      Desktop View
+    </th>
+    <th>
+      Mobile View
+    </th>
+  </tr>
+</table>
+
+### Links
+[https://blogr-zebs.vercel.app/](https://blogr-zebs.vercel.app/)
 
 ## My process
 
@@ -32,7 +55,7 @@ Users should be able to:
 
 - [React](https://reactjs.org/) - JS library
 - [SCSS](https://sass-lang.com/) - CSS compiler
-- [Netlify](http://netlify.com/) - Web hosting
+- [Vercel](https://vercel.com/) - Web hosting
 
 - Responsive design fit for every device using Flexbox and percentage unit
 - Modular CSS with BEM
@@ -50,7 +73,7 @@ Users should be able to:
 
 ### Continued development
 
-While my project files are sorted accordingly, it can be improved to be more scalable and support bigger projects, and I’ll just need more experience with those to improve. I also need those experiences to be quicker at recognizing website structure and building components accordingly. I ended up with a good understanding of the structure and on how to separate responsibilities of each component, but it had to go through a handful of changes to get there.
+While my project files are organized accordingly, it can be improved to be more scalable and support bigger projects, and I’ll just need more experience with those to improve. I also need those experiences to be quicker at recognizing website structure and building components accordingly. I ended up with a good understanding of the structure and on how to separate responsibilities of each component, but it had to go through a handful of changes to get there.
 
 Animation, grid display and SCSS functions are still foreign to me, and learning them should help increase the efficiency and scalability of my workflow more than it already is. I should also try to learn some CSS frameworks so I don’t waste time reinventing the wheel. Finally, a server side render tech seems to be helpful to improve site load time.
 
