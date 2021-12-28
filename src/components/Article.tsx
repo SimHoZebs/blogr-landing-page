@@ -1,6 +1,6 @@
 import style from "../css/article.module.css";
 
-import Image from "./SideImage";
+import SideImage from "./SideImage";
 
 function Article(props) {
   function isInfra() {
@@ -33,7 +33,7 @@ function Article(props) {
       )}
 
       <div className={` ${style.content} ${contentStyle(props.side)} `}>
-        <Image side={props.side} img={props.img} />
+        <SideImage side={props.side} img={props.img} />
 
         <div className={`${style.blockSection} `}>
           {props.data.desc.map(({ title, desc }) => (
