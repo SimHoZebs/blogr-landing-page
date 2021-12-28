@@ -32,6 +32,6 @@ const footerData = [
     ]
   }
 
-]
+];
 
-export default footerData
+export default footerData;

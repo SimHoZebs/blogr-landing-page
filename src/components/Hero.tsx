@@ -1,17 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import Navbar from './Navbar'
+import Navbar from "./Navbar";
 
-import style from '../css/hero.module.css'
-import bgPatternIntro from '../images/bg-pattern-intro.svg';
+import style from "../css/hero.module.css";
 
 function Hero() {
-
   return (
     <section className={style.hero}>
       <div className={style.bgContainer}>
-
-        <img className={style.hero__bg} src={bgPatternIntro} alt="" />
+        <img className={style.hero__bg} src={"/bg-pattern-intro.svg"} alt="" />
       </div>
 
       <Navbar />
@@ -28,7 +25,7 @@ function Hero() {
         <button>Learn More</button>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

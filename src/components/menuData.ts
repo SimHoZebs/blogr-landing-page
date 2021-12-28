@@ -14,6 +14,6 @@ const menuData = [
     name: "Connect",
     links: ["Contact", "Newsletter", "LinkedIn"]
   }
-]
+];
 
 export default menuData;

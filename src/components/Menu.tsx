@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import menuData from './menuData'
+import menuData from "./menuData";
 
-import style from '../css/menu.module.css'
-import util from '../css/util.module.css'
-
-import arrowDark from '../images/icon-arrow-dark.svg';
-import arrowLight from '../images/icon-arrow-light.svg';
+import style from "../css/menu.module.css";
+import util from "../css/util.module.css";
 
 function Menu({ menuBlockOpen, windowWidth }) {
   const [openMenu, setOpenMenu] = useState();
@@ -14,28 +11,27 @@ function Menu({ menuBlockOpen, windowWidth }) {
   const desktopWidth = 768;
 
   function openThisMenu(name) {
-    setOpenMenu(prev => (prev === name ? "" : name))
+    setOpenMenu((prev) => (prev === name ? "" : name));
   }
   function isDesktopView() {
-    return windowWidth >= desktopWidth ? true : false
+    return windowWidth >= desktopWidth ? true : false;
   }
 
   function menuOpen(menu) {
-    return openMenu === menu.name ? true : false
+    return openMenu === menu.name ? true : false;
   }
 
   return (
     <div
       className={`
       ${style.nav}
-      ${(isDesktopView() || !menuBlockOpen) || util.shadow}
+      ${isDesktopView() || !menuBlockOpen || util.shadow}
       ${menuBlockOpen || style.menuClose} 
       `}
     >
       <div className={style.nav__menuBar}>
         {menuData.map((menu) => (
           <div key={menu.name} className={style.nav__menuContainer}>
-
             <button
               className={`
                 ${style.nav__menuBtn}
@@ -50,7 +46,11 @@ function Menu({ menuBlockOpen, windowWidth }) {
                   ${style.arrow}
                   ${menuOpen(menu) && style.arrow_close}
                 `}
-                src={windowWidth >= desktopWidth ? arrowLight : arrowDark}
+                src={
+                  windowWidth >= desktopWidth
+                    ? "/icon-arrow-light.svg"
+                    : "/icon-arrow-dark.svg"
+                }
                 alt=""
               />
             </button>
@@ -58,12 +58,14 @@ function Menu({ menuBlockOpen, windowWidth }) {
             <div
               className={`
                 ${style.nav__linkContainer}
-                ${(isDesktopView() && menuOpen(menu)) && util.shadow}
+                ${isDesktopView() && menuOpen(menu) && util.shadow}
                 ${menuOpen(menu) || style.menuClose}
-              ` }
+              `}
             >
               {menu.links.map((link) => (
-                <a key={link} className={style.nav__link} href="/">{link}</a>
+                <a key={link} className={style.nav__link} href="/">
+                  {link}
+                </a>
               ))}
             </div>
           </div>
@@ -71,11 +73,15 @@ function Menu({ menuBlockOpen, windowWidth }) {
       </div>
 
       <section className={style.credentials}>
-        <a className={style.login} href="/">Login</a>
-        <a className={`${style.signup} ${util.shadow}`} href="/">Sign Up</a>
+        <a className={style.login} href="/">
+          Login
+        </a>
+        <a className={`${style.signup} ${util.shadow}`} href="/">
+          Sign Up
+        </a>
       </section>
-    </div >
-  )
+    </div>
+  );
 }
 
-export default Menu
+export default Menu;
