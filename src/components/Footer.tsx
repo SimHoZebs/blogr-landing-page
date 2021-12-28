@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import style from "../css/footer.module.css";
 import footerData from "./footerData";
@@ -13,9 +14,9 @@ function Footer() {
 
           <div className={style.footer__links}>
             {section.links.map((link) => (
-              <a key={link} href="/">
+              <Link key={link} href="/">
                 {link}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

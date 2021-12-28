@@ -1,6 +1,6 @@
 import style from "../css/article.module.css";
 
-import Image from "./Image";
+import Image from "./SideImage";
 
 function Article(props) {
   function isInfra() {

@@ -8,6 +8,7 @@ function Hero() {
   return (
     <section className={style.hero}>
       <div className={style.bgContainer}>
+      {/* eslint-disable-next-line @next/next/no-img-element*/}
         <img className={style.hero__bg} src={"/bg-pattern-intro.svg"} alt="" />
       </div>
 

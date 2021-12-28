@@ -4,6 +4,7 @@ import menuData from "./menuData";
 
 import style from "../css/menu.module.css";
 import util from "../css/util.module.css";
+import Link from "next/link";
 
 function Menu({ menuBlockOpen, windowWidth }) {
   const [openMenu, setOpenMenu] = useState();
@@ -41,6 +42,7 @@ function Menu({ menuBlockOpen, windowWidth }) {
             >
               <span className={style.nav__btnName}>{menu.name}</span>
 
+              {/* eslint-disable-next-line @next/next/no-img-element*/}
               <img
                 className={`
                   ${style.arrow}
@@ -63,9 +65,9 @@ function Menu({ menuBlockOpen, windowWidth }) {
               `}
             >
               {menu.links.map((link) => (
-                <a key={link} className={style.nav__link} href="/">
-                  {link}
-                </a>
+                <Link key={link} href="/">
+                  <a className={style.nav__link}>{link}</a>
+                </Link>
               ))}
             </div>
           </div>
@@ -73,12 +75,12 @@ function Menu({ menuBlockOpen, windowWidth }) {
       </div>
 
       <section className={style.credentials}>
-        <a className={style.login} href="/">
-          Login
-        </a>
-        <a className={`${style.signup} ${util.shadow}`} href="/">
-          Sign Up
-        </a>
+        <Link href="/">
+          <a className={style.login}> Login </a>
+        </Link>
+        <Link href="/">
+          <a className={`${style.signup} ${util.shadow}`}>Sign Up</a>
+        </Link>
       </section>
     </div>
   );

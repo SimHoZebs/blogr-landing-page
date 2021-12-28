@@ -15,6 +15,7 @@ function Image(props) {
 
   return (
     <div className={style.imgContainer}>
+      {/* eslint-disable-next-line @next/next/no-img-element*/}
       <img
         className={` ${style.img} ${imgStyle(props.side)} `}
         src={props.img}

@@ -42,6 +42,7 @@ function Main() {
 
       <Article data={data(1)} isInfra={true} img={"/illustration-phones.svg"}>
         <div className={style.infra__imgContainer}>
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img
             className={style.infra__bg}
             src={"/bg-pattern-circles.svg"}
