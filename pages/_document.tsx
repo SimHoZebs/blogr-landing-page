@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="%PUBLIC_URL%/favicon-32x32.png"
+            href="/favicon-32x32.png"
           />
 
           <meta name="theme-color" content="#000000" />

@@ -1,5 +1,4 @@
 import "windi.css";
-import "normalize.css";
 import "../src/css/global.css";
 
 export default function MyApp({ Component, pageProps }) {

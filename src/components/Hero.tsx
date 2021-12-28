@@ -8,8 +8,12 @@ function Hero() {
   return (
     <section className={style.hero}>
       <div className={style.bgContainer}>
-      {/* eslint-disable-next-line @next/next/no-img-element*/}
-        <img className={style.hero__bg} src={"/bg-pattern-intro.svg"} alt="" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          className="absolute h-[calc(100vw + 95.5rem)] translate-x-[-13%] translate-y-[-43%]"
+          src={"/bg-pattern-intro.svg"}
+          alt=""
+        />
       </div>
 
       <Navbar />
