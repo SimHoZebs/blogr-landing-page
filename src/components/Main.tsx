@@ -6,7 +6,7 @@ import Article from "./Article";
 import style from "../css/main.module.css";
 
 function Main() {
-  const [windowWidth, setWindowWidth] = useState();
+  const [windowWidth, setWindowWidth] = useState<number | undefined>();
 
   const resizeEvent = () => {
     setWindowWidth((prev) => window.innerWidth);

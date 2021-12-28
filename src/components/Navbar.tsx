@@ -5,7 +5,7 @@ import style from "../css/navbar.module.css";
 
 function Navbar() {
   const [menuBlockOpen, setMenuBlockOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState();
+  const [windowWidth, setWindowWidth] = useState<number | undefined>();
 
   const resizeEvent = () => {
     setWindowWidth((prev) => window.innerWidth);
