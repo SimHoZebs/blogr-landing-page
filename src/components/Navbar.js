@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Menu from './Menu'
 
-
 import style from '../css/navbar.module.css'
-import hamburgerMenu from '../images/icon-hamburger.svg';
-
+import hamburgerMenu from '../images/icon-hamburger.svg'
 
 function Navbar() {
-  const [menuBlockOpen, setMenuBlockOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [menuBlockOpen, setMenuBlockOpen] = useState(false)
+  const [windowWidth, setWindowWidth] = useState()
 
   const resizeEvent = () => {
     setWindowWidth(prev => window.innerWidth)
@@ -22,6 +20,11 @@ function Navbar() {
   }, [])
 
   useEffect(() => {
+    if (window) {
+      setWindowWidth(window.innerWidth)
+    }
+
+
     windowWidth >= 768
       ? setMenuBlockOpen(prev => true)
       : setMenuBlockOpen(prev => false)
