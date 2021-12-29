@@ -5,4 +5,10 @@ export default defineConfig({
     include: ['**/*.{tsx,css}'],
     exclude: ['node_modules', '.git', '.next', 'public'],
   },
+  theme: {
+    fontFamily: {
+      'overpass': 'Overpass, sans-serif',
+      'ubuntu': 'Ubuntu, sans-serif',
+    }
+  }
 });

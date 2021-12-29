@@ -1,48 +1,31 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import Menu from "./Menu";
 
-import style from "../css/navbar.module.css";
+interface Props {
+  menu: { name: string; links: string[] }[];
+}
 
-function Navbar() {
+function Navbar(props: Props) {
   const [menuBlockOpen, setMenuBlockOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState<number | undefined>();
-
-  const resizeEvent = () => {
-    setWindowWidth((prev) => window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", resizeEvent);
-    return () => {
-      window.removeEventListener("resize", resizeEvent);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (window) {
-      setWindowWidth(window.innerWidth);
-    }
-
-    windowWidth >= 768
-      ? setMenuBlockOpen((prev) => true)
-      : setMenuBlockOpen((prev) => false);
-  }, [windowWidth]);
 
   return (
-    <nav className={style.navbar}>
-      <div className={style.navbar__title}>Blogr</div>
+    <nav
+      className="flex
+      <md:flex-wrap
+      md:(gap-x-16 justify-between) mx-6 pt-14"
+    >
+      <div className="flex justify-between <md:w-full">
+        <div className="font-semibold text-4xl">Blogr</div>
 
-      {windowWidth < 768 && (
         <input
-          className={style.navbar__button}
+          className="md:hidden"
           type="image"
           src="icon-hamburger.svg"
           alt=""
           onClick={() => setMenuBlockOpen((prev) => !prev)}
         />
-      )}
-
-      <Menu menuBlockOpen={menuBlockOpen} windowWidth={windowWidth} />
+      </div>
+      <Menu menu={props.menu} menuBlockOpen={menuBlockOpen} />
     </nav>
   );
 }
