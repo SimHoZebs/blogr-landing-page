@@ -14,7 +14,8 @@ const MenuItem = (props: Props) => {
     props.setOpenIndex(props.openIndex === index ? null : index);
   }
   const iconArrowStyle =
-    "duration-500" + (props.openIndex === props.index ? " rotate-180" : "");
+    "transform duration-500" +
+    (props.openIndex === props.index ? " rotate-180" : "");
 
   return (
     <div className="<md:(w-full) flex items-center flex-col">
@@ -24,17 +25,17 @@ const MenuItem = (props: Props) => {
       >
         {props.children}
         {/**I could dynamically change the source but that requires listening to window size*/}
-        <img
-          className={"<md:hidden " + iconArrowStyle}
-          src="/icon-arrow-light.svg"
-          alt=""
-        />
-
-        <img
-          className={"md:hidden " + iconArrowStyle}
-          src="/icon-arrow-dark.svg"
-          alt=""
-        />
+        <div className="text-light-50 <md:text-dark-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+            <path
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              opacity=".75"
+              d="M1 1l4 4 4-4"
+            />
+          </svg>
+        </div>
       </ButtonBase>
 
       <div
