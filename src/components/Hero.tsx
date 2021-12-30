@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "./Navbar";
 import Image from "next/image";
+import ButtonBase from "./ButtonBase";
 
 import style from "../css/hero.module.css";
 
@@ -24,15 +25,17 @@ function Hero(props: Props) {
       <Navbar menu={props.menu} />
 
       <header className={style.hero__header}>
-        <h1>A modern publishing platform</h1>
+        <h1 className="leading-tight font-bold">
+          A modern publishing platform
+        </h1>
 
         <p>Grow your audience and build your online brand</p>
       </header>
 
       <div className={style.btnContainer}>
-        <button className={style.cta}>Start for Free</button>
+        <ButtonBase className={style.cta}>Start for Free</ButtonBase>
 
-        <button>Learn More</button>
+        <ButtonBase>Learn More</ButtonBase>
       </div>
     </section>
   );

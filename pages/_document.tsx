@@ -22,7 +22,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <meta
             name="description"
-            content="Web site created using create-react-app"
+            content="SimHo's frontend mentor challenge"
           />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,18 +30,8 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
-
-          {/* <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> */}
         </Head>
-        <body>
+        <body className="text-base font-overpass font-light text-blue-gray-600">
           <Main />
           <NextScript />
         </body>
