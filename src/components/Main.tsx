@@ -1,66 +1,56 @@
-import React, { useState, useEffect } from "react";
-
-import mainData from "./mainData";
 import Article from "./Article";
+import Image from "next/image";
+import ArticleText from "./ArticleText";
 
-import style from "../css/main.module.css";
+interface Props {
+  main: { title: string; desc: string }[][];
+}
 
-function Main() {
-  const [windowWidth, setWindowWidth] = useState<number | undefined>();
-
-  const resizeEvent = () => {
-    setWindowWidth((prev) => window.innerWidth);
-  };
-
-  useEffect(() => {
-    setWindowWidth((prev) => window.innerWidth);
-    window.addEventListener("resize", resizeEvent);
-    return () => {
-      window.removeEventListener("resize", resizeEvent);
-    };
-  }, []);
-
-  function data(index) {
-    return mainData[index];
-  }
-
-  function isDesktopView() {
-    return windowWidth >= 768 ? true : false;
-  }
-
+function Main(props: Props) {
   return (
-    <div className={style.mainContainer}>
-      <Article
-        data={data(0)}
-        img={
-          isDesktopView()
-            ? "/illustration-editor-desktop.svg"
-            : "/illustration-editor-mobile.svg"
-        }
-        side={"right"}
-      />
+    <section className="flex flex-col gap-gap-y-12">
+      <h2 className="text-4xl text-center font-semibold">
+        Designed for the future
+      </h2>
 
-      <Article data={data(1)} isInfra={true} img={"/illustration-phones.svg"}>
-        <div className={style.infra__imgContainer}>
-          {/* eslint-disable-next-line @next/next/no-img-element*/}
-          <img
-            className={style.infra__bg}
-            src={"/bg-pattern-circles.svg"}
+      <Article className="pl-24">
+        <ArticleText paragraph={props.main[0]} />
+
+        <div className="relative transform translate-x-25">
+          <Image
+            src="/illustration-editor-desktop.svg"
             alt=""
+            width={800}
+            height={800}
           />
         </div>
       </Article>
 
-      <Article
-        data={data(2)}
-        img={
-          isDesktopView()
-            ? "/illustration-laptop-desktop.svg"
-            : "/illustration-laptop-mobile.svg"
-        }
-        side={"left"}
-      />
-    </div>
+      <Article className="pr-24 from-blue-gray-800 bg-gradient-to-b to-blue-gray-700 text-light-50 rounded-bl-9xl rounded-tr-9xl">
+        <div className="relative">
+          <Image
+            src="/illustration-phones.svg"
+            alt=""
+            width={600}
+            height={600}
+          />
+        </div>
+
+        <ArticleText paragraph={props.main[1]} />
+      </Article>
+
+      <Article className="pr-24">
+        <div className="relative transform -translate-x-25 ">
+          <Image
+            src="/illustration-laptop-desktop.svg"
+            alt=""
+            width={800}
+            height={700}
+          />
+        </div>
+        <ArticleText paragraph={props.main[2]} />
+      </Article>
+    </section>
   );
 }
 

@@ -31,7 +31,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="text-base font-overpass font-light text-blue-gray-600">
+        <body className="text-base font-overpass font-light text-blue-gray-700">
           <Main />
           <NextScript />
         </body>
