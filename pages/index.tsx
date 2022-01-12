@@ -31,7 +31,7 @@ function App(props: InferGetStaticPropsType<typeof getStaticProps>) {
           <p className="pt-6">Grow your audience and build your online brand</p>
         </header>
 
-        <div className="flex flex-wrap z-1 self-center justify-center gap-gap-x-4">
+        <div className="flex flex-wrap z-1 self-center justify-center gap-x-4">
           <ButtonBase className="bg-light-50 text-red-500 py-4 px-6 rounded-full">
             Start for Free
           </ButtonBase>
@@ -42,7 +42,7 @@ function App(props: InferGetStaticPropsType<typeof getStaticProps>) {
       </section>
 
       <Main main={props.main} />
-      <Footer />
+      <Footer footer={props.footer} />
     </div>
   );
 }
@@ -104,6 +104,32 @@ export async function getStaticProps() {
             desc: "Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.",
           },
         ],
+      ],
+
+      footer: [
+        {
+          title: "Product",
+
+          links: [
+            "Overview",
+            "Pricing",
+            "Marketplace",
+            "Features",
+            "Integrations",
+          ],
+        },
+
+        {
+          title: "Company",
+
+          links: ["About", "Team", "Blog", "Careers"],
+        },
+
+        {
+          title: "Connect",
+
+          links: ["Contact", "Newsletter", "LinkedIn"],
+        },
       ],
     },
   };

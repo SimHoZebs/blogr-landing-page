@@ -8,7 +8,7 @@ interface Props {
 
 function Main(props: Props) {
   return (
-    <section className="flex flex-col gap-gap-y-12">
+    <section className="flex flex-col gap-y-12">
       <h2 className="text-4xl text-center font-semibold">
         Designed for the future
       </h2>
