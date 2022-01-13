@@ -2,6 +2,23 @@
 
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+## UPDATE!
+This project was updated to improve performance and to demonstrate my skills and main tech stack better. SCSS is replaced with WindiCSS and Next.js is used on top of React.
+
+### PageSpeed Insights Benchmark
+
+Benchmark done under Slow 4G throttling and Moto 4G Emulation with 4x CPU slowdown.
+
+|  | Old (Desktop) | New (Desktop) | Old (Mobile) | New (Mobile) |
+| --- | --- | --- | --- | --- |
+| First Contentful Pain | 0.8 s | 0.5 s | 2.6 s | 2.0 s |
+| Speed Index | 0.8 s | 0.5 s | 2.6 s | 2.0 s |
+| Largest Contentful Paint | 0.8 s | 0.5 s | 2.6 s | 2.3 s |
+| Time to Interactive | 0.8 s | 0.5 s | 2.6 s | 2.0 s |
+| Total Blocking Time | 0 ms | 0 ms | 0 ms | 0 ms |
+| Cumulative Layout Shift | 0.016 | 0.002 | 0.029 | 0.003 |
+| Average improvement |  | 37.5% faster |  | ~20.2% faster |
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -13,6 +30,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
+
 
 ## Overview
 
