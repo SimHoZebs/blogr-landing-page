@@ -27,13 +27,24 @@ function Main(props: Props) {
         </div>
       </Article>
 
-      <Article className="pr-24 from-blue-gray-800 bg-gradient-to-b to-blue-gray-700 text-light-50 rounded-bl-9xl rounded-tr-9xl">
-        <div className="relative">
+      <Article className="pr-24 text-light-50">
+        <div className="from-blue-gray-800 bg-gradient-to-br to-blue-gray-700 text-light-50 rounded-bl-9xl rounded-tr-9xl absolute h-2/3 w-full overflow-hidden ">
+          <div className="transform -translate-x-70 -translate-y-160">
+            <Image
+              src="/bg-pattern-circles.svg"
+              alt=""
+              layout="responsive"
+              width={1014}
+              height={1018}
+            />
+          </div>
+        </div>
+        <div className="relative flex w-3/5">
           <Image
             src="/illustration-phones.svg"
             alt=""
-            width={600}
-            height={600}
+            width={552}
+            height={579}
           />
         </div>
 
