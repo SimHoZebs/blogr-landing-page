@@ -10,7 +10,7 @@ import { InferGetStaticPropsType } from "next";
 function App(props: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div className="flex flex-col gap-y-24">
-      <section className="flex rounded-bl-9xl flex-col gap-y-14 bg-gradient-to-r from-red-300 bg-red-500 px-6 pt-14 pb-36 <md:p-3 text-light-50 overflow-hidden relative">
+      <section className="flex rounded-bl-9xl flex-col gap-y-14 bg-gradient-to-r from-red-300 bg-red-500 px-6 <md:(px-3 pt-10 pb-14) pt-14 pb-36 text-light-50 overflow-hidden relative">
         <div className="absolute h-full w-400 <md:(-translate-x-100 -translate-y-150) transform -translate-y-150">
           <Image
             src={"/bg-pattern-intro.svg"}
@@ -24,7 +24,7 @@ function App(props: InferGetStaticPropsType<typeof getStaticProps>) {
         <Navbar menu={props.menu} />
 
         <header className="z-1 text-center">
-          <h1 className="leading-tight font-bold text-6xl <md:text-5xl">
+          <h1 className="leading-tight tracking-tight font-bold text-6xl <md:text-5xl">
             A modern publishing platform
           </h1>
 

@@ -13,23 +13,34 @@ function Main(props: Props) {
         Designed for the future
       </h2>
 
-      <Article className="pl-24">
+      <Article className="md:pl-24 flex-col-reverse ">
         <ArticleText paragraph={props.main[0]} />
 
-        <div className="relative transform scale-125  translate-x-25 w-2/3">
-          <Image
-            src="/illustration-editor-desktop.svg"
-            alt=""
-            layout="responsive"
-            width={925}
-            height={882}
-          />
+        <div className="relative transform md:(scale-125 translate-x-25 w-2/3) w-full">
+          <div className="<md:hidden">
+            <Image
+              src="/illustration-editor-desktop.svg"
+              alt=""
+              layout="responsive"
+              width={925}
+              height={882}
+            />
+          </div>
+          <div className="md:hidden">
+            <Image
+              src="/illustration-editor-mobile.svg"
+              alt=""
+              layout="responsive"
+              width={406}
+              height={331}
+            />
+          </div>
         </div>
       </Article>
 
-      <Article className="pr-24 text-light-50">
-        <div className="from-blue-gray-800 bg-gradient-to-br to-blue-gray-700 text-light-50 rounded-bl-9xl rounded-tr-9xl absolute h-2/3 w-full overflow-hidden ">
-          <div className="transform -translate-x-70 -translate-y-160">
+      <Article className="md:pr-24 text-light-50 flex-col">
+        <div className="from-blue-gray-800 bg-gradient-to-br to-blue-gray-700 text-light-50 rounded-bl-9xl rounded-tr-9xl absolute h-2/3 w-full overflow-hidden <md:(transform translate-y-35)">
+          <div className="transform md:(-translate-x-70 -translate-y-160) -translate-y-40 scale-160">
             <Image
               src="/bg-pattern-circles.svg"
               alt=""
@@ -39,7 +50,7 @@ function Main(props: Props) {
             />
           </div>
         </div>
-        <div className="relative flex w-3/5">
+        <div className="flex md:w-3/5 w-full">
           <Image
             src="/illustration-phones.svg"
             alt=""
@@ -51,15 +62,26 @@ function Main(props: Props) {
         <ArticleText paragraph={props.main[1]} />
       </Article>
 
-      <Article className="pr-24">
-        <div className="relative transform scale-125 -translate-x-25 w-2/3">
-          <Image
-            src="/illustration-laptop-desktop.svg"
-            alt=""
-            layout="responsive"
-            width={974}
-            height={786}
-          />
+      <Article className="md:pr-24 flex-col">
+        <div className="relative md:(transform scale-125 -translate-x-25 w-2/3) w-full">
+          <div className="<md:hidden">
+            <Image
+              src="/illustration-laptop-desktop.svg"
+              alt=""
+              layout="responsive"
+              width={974}
+              height={786}
+            />
+          </div>
+          <div className="md:hidden">
+            <Image
+              src="/illustration-laptop-mobile.svg"
+              alt=""
+              layout="responsive"
+              width={498}
+              height={359}
+            />
+          </div>
         </div>
         <ArticleText paragraph={props.main[2]} />
       </Article>
