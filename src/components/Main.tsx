@@ -16,12 +16,13 @@ function Main(props: Props) {
       <Article className="pl-24">
         <ArticleText paragraph={props.main[0]} />
 
-        <div className="relative transform translate-x-25">
+        <div className="relative transform scale-125  translate-x-25 w-2/3">
           <Image
             src="/illustration-editor-desktop.svg"
             alt=""
-            width={800}
-            height={800}
+            layout="responsive"
+            width={925}
+            height={882}
           />
         </div>
       </Article>
@@ -40,12 +41,13 @@ function Main(props: Props) {
       </Article>
 
       <Article className="pr-24">
-        <div className="relative transform -translate-x-25 ">
+        <div className="relative transform scale-125 -translate-x-25 w-2/3">
           <Image
             src="/illustration-laptop-desktop.svg"
             alt=""
-            width={800}
-            height={700}
+            layout="responsive"
+            width={974}
+            height={786}
           />
         </div>
         <ArticleText paragraph={props.main[2]} />
